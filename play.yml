@@ -1,0 +1,11 @@
+---
+- hosts: devserver
+  become: yes
+  ignore_errors: yes
+  tasks:
+    -name: creating user
+    user:
+      name: eunice
+      comment: eunice Admin
+      shell: /bin/bash
+
